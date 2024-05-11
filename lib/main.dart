@@ -15,10 +15,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Scaffold(
         backgroundColor: SkColors.black,
-        body: const Column(
+        body: Column(
           children: [
             // For Status Bar
             SizedBox(height: 24),
