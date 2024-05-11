@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:secretary_kim/constant/path.dart';
 
 class TopBar extends StatelessWidget {
   const TopBar({super.key});
@@ -15,19 +16,19 @@ class TopBar extends StatelessWidget {
           children: [
             const SizedBox(width: 28),
             SvgPicture.asset(
-              "assets/icons/ic_arrow_left.svg",
+              "${Path.icon}ic_arrow_left.svg",
               width: 24,
               height: 24,
             ),
             const Spacer(),
             Image.asset(
-              "assets/images/img_secretary_kim.png",
+              "${Path.image}img_secretary_kim.png",
               width: 98,
               height: 119,
             ),
             const Spacer(),
             SvgPicture.asset(
-              "assets/icons/ic_modify.svg",
+              "${Path.icon}ic_modify.svg",
               width: 24,
               height: 24,
             ),

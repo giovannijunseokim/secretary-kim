@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:secretary_kim/constant/path.dart';
 import 'package:secretary_kim/theme/colors.dart';
 
 class MoveButton extends StatelessWidget {
@@ -40,7 +41,7 @@ class BelongingAddButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
       ),
       child: SvgPicture.asset(
-        "assets/icons/ic_plus.svg",
+        "${Path.icon}ic_plus.svg",
         color: SkColors.blue2,
         width: 24,
         height: 24,

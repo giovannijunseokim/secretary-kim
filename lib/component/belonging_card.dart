@@ -17,7 +17,7 @@ class BelongingCard extends StatelessWidget {
       ),
       child: Text(
         name,
-        style: TextStyle(color: SkColors.white, fontSize: 18),
+        style: const TextStyle(color: SkColors.white, fontSize: 18),
       ),
     );
   }
