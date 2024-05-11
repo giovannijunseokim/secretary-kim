@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:secretary_kim/component/belongings_grid.dart';
-import 'package:secretary_kim/component/buttons.dart';
-import 'package:secretary_kim/component/title_text.dart';
-import 'package:secretary_kim/component/top_bar.dart';
+import 'package:secretary_kim/components/belongings_grid.dart';
+import 'package:secretary_kim/components/buttons.dart';
+import 'package:secretary_kim/components/title_text.dart';
+import 'package:secretary_kim/components/top_bar.dart';
 import 'package:secretary_kim/theme/colors.dart';
 
 void main() {
