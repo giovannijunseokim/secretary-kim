@@ -10,7 +10,7 @@ class TitleText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: SkTextStyle.semiBold18,
+      style: SkTextStyle.semiBold22,
     );
   }
 }

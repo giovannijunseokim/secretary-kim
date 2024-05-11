@@ -21,7 +21,7 @@ class MoveButton extends StatelessWidget {
       ),
       child: const Text(
         "이동하기",
-        style: SkTextStyle.semiBold18,
+        style: SkTextStyle.semiBold20,
       ),
     );
   }
