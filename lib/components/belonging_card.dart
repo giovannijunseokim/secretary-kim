@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:secretary_kim/theme/colors.dart';
+import 'package:secretary_kim/theme/text_style.dart';
 
 class BelongingCard extends StatelessWidget {
   final String name;
@@ -17,7 +18,7 @@ class BelongingCard extends StatelessWidget {
       ),
       child: Text(
         name,
-        style: const TextStyle(color: SkColors.white, fontSize: 18),
+        style: SkTextStyle.semiBold18,
       ),
     );
   }

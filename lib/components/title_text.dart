@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:secretary_kim/theme/colors.dart';
+import 'package:secretary_kim/theme/text_style.dart';
 
 class TitleText extends StatelessWidget {
   final String title;
@@ -10,10 +10,7 @@ class TitleText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: const TextStyle(
-        color: SkColors.white,
-        fontSize: 18,
-      ),
+      style: SkTextStyle.semiBold18,
     );
   }
 }
