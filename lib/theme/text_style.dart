@@ -1,22 +1,23 @@
 import 'package:flutter/cupertino.dart';
+import 'package:secretary_kim/constant/font.dart';
 import 'package:secretary_kim/theme/colors.dart';
 
 class SkTextStyle {
-  static const semiBold22 = TextStyle(
+  static const bold22 = TextStyle(
       color: SkColors.white,
       fontSize: 22,
-      fontFamily: 'Pretendard',
-      fontWeight: FontWeight.w600);
+      fontFamily: Font.pretendard,
+      fontWeight: FontWeight.bold);
 
   static const semiBold20 = TextStyle(
       color: SkColors.white,
       fontSize: 20,
-      fontFamily: 'Pretendard',
+      fontFamily: Font.pretendard,
       fontWeight: FontWeight.w600);
 
-  static const semiBold18 = TextStyle(
+  static const normal18 = TextStyle(
       color: SkColors.white,
       fontSize: 18,
-      fontFamily: 'Pretendard',
-      fontWeight: FontWeight.w600);
+      fontFamily: Font.pretendard,
+      fontWeight: FontWeight.normal);
 }
