@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:secretary_kim/components/belonging_card.dart';
-import 'package:secretary_kim/components/buttons.dart';
+import 'package:secretary_kim/ui/components/belonging_card.dart';
+import 'package:secretary_kim/ui/components/buttons.dart';
 
 class BelongingsGrid extends StatelessWidget {
   const BelongingsGrid({super.key});

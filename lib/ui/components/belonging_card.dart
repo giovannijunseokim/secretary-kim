@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:secretary_kim/theme/colors.dart';
-import 'package:secretary_kim/theme/text_style.dart';
+import 'package:secretary_kim/ui/theme/colors.dart';
+import 'package:secretary_kim/ui/theme/text_style.dart';
 
 class BelongingCard extends StatelessWidget {
   final String name;

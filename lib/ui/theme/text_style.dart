@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:secretary_kim/constant/font.dart';
-import 'package:secretary_kim/theme/colors.dart';
+import 'package:secretary_kim/ui/theme/colors.dart';
 
 class SkTextStyle {
   static const bold22 = TextStyle(

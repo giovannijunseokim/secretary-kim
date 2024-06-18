@@ -3,7 +3,12 @@ import 'package:flutter_svg/svg.dart';
 import 'package:secretary_kim/constant/path.dart';
 
 class TopBar extends StatelessWidget {
-  const TopBar({super.key});
+  const TopBar({
+    super.key,
+    required this.doesBackIconVisible,
+  });
+
+  final bool doesBackIconVisible;
 
   @override
   Widget build(BuildContext context) {
@@ -15,11 +20,14 @@ class TopBar extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(width: 28),
-            SvgPicture.asset(
-              "${Path.icon}ic_arrow_left.svg",
-              width: 24,
-              height: 24,
-            ),
+            if (doesBackIconVisible)
+              SvgPicture.asset(
+                "${Path.icon}ic_arrow_left.svg",
+                width: 24,
+                height: 24,
+              )
+            else
+              const SizedBox(width: 24),
             const Spacer(),
             Image.asset(
               "${Path.image}img_secretary_kim.png",
