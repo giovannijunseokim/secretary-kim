@@ -16,14 +16,14 @@ class LocalStorageManager {
     await Hive.initFlutter();
     Hive.registerAdapter(DestinationAdapter());
     Hive.registerAdapter(BelongingAdapter());
-    await Hive.openBox<Destination>('destinations');
+    await Hive.openBox<Destination>('user_destinations');
   }
 
   Box<Destination> getDestinations() {
-    return Hive.box<Destination>('destinations');
+    return Hive.box<Destination>('user_destinations');
   }
 
   void addDestination(String createdAt, Destination destination) {
-    Hive.box<Destination>('destinations').put(createdAt, destination);
+    Hive.box<Destination>('user_destinations').put(createdAt, destination);
   }
 }

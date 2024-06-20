@@ -17,18 +17,21 @@ class DestinationAdapter extends TypeAdapter<Destination> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return Destination(
-      name: fields[0] as String,
-      belongings: (fields[1] as List).cast<Belonging>(),
+      id: fields[0] as String,
+      name: fields[1] as String,
+      belongings: (fields[2] as List).cast<Belonging>(),
     );
   }
 
   @override
   void write(BinaryWriter writer, Destination obj) {
     writer
-      ..writeByte(2)
+      ..writeByte(3)
       ..writeByte(0)
-      ..write(obj.name)
+      ..write(obj.id)
       ..writeByte(1)
+      ..write(obj.name)
+      ..writeByte(2)
       ..write(obj.belongings);
   }
 
