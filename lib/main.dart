@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:secretary_kim/data/local_storage_manager.dart';
 import 'package:secretary_kim/ui/screens/home_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await LocalStorageManager.storage.initStorage();
   runApp(const MyApp());
 }
 
