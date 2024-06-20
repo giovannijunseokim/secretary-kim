@@ -15,6 +15,12 @@ class SkTextStyle {
       fontFamily: Font.pretendard,
       fontWeight: FontWeight.w600);
 
+  static const semiBold18 = TextStyle(
+      color: SkColors.white,
+      fontSize: 20,
+      fontFamily: Font.pretendard,
+      fontWeight: FontWeight.w600);
+
   static const normal18 = TextStyle(
       color: SkColors.white,
       fontSize: 18,
