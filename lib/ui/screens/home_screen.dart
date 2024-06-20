@@ -6,6 +6,7 @@ import 'package:secretary_kim/data/model/destination.dart';
 import 'package:secretary_kim/ui/components/destination_card.dart';
 import 'package:secretary_kim/ui/components/title_text.dart';
 import 'package:secretary_kim/ui/components/top_bar.dart';
+import 'package:secretary_kim/ui/screens/belongings_screen.dart';
 import 'package:secretary_kim/ui/theme/colors.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -43,6 +44,16 @@ class _HomeScreenState extends State<HomeScreen> {
                     padding: const EdgeInsets.symmetric(horizontal: 28),
                     child: DestinationCard(
                       name: destinations.elementAt(index).name,
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const BelongingsScreen();
+                            },
+                          ),
+                        );
+                      },
                     ),
                   );
                 },

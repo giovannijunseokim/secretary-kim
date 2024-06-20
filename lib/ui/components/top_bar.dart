@@ -3,12 +3,12 @@ import 'package:flutter_svg/svg.dart';
 import 'package:secretary_kim/constant/path.dart';
 
 class TopBar extends StatelessWidget {
+  final bool doesBackIconVisible;
+
   const TopBar({
     super.key,
     required this.doesBackIconVisible,
   });
-
-  final bool doesBackIconVisible;
 
   @override
   Widget build(BuildContext context) {
@@ -21,10 +21,15 @@ class TopBar extends StatelessWidget {
           children: [
             const SizedBox(width: 28),
             if (doesBackIconVisible)
-              SvgPicture.asset(
-                "${Path.icon}ic_arrow_left.svg",
-                width: 24,
-                height: 24,
+              GestureDetector(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: SvgPicture.asset(
+                  "${Path.icon}ic_arrow_left.svg",
+                  width: 24,
+                  height: 24,
+                ),
               )
             else
               const SizedBox(width: 24),
