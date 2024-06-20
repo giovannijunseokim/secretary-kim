@@ -23,7 +23,15 @@ class LocalStorageManager {
     return Hive.box<Destination>('user_destinations');
   }
 
-  void addDestination(String createdAt, Destination destination) {
-    Hive.box<Destination>('user_destinations').put(createdAt, destination);
+  void putDestination(int index, Destination destination) {
+    Hive.box<Destination>('user_destinations').put(index, destination);
+  }
+
+  void removeDestination(int index) {
+    Hive.box<Destination>('user_destinations').delete(index);
+  }
+
+  void clearDestination() {
+    Hive.box<Destination>('user_destinations').clear();
   }
 }

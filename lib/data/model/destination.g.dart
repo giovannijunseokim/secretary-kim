@@ -17,7 +17,7 @@ class DestinationAdapter extends TypeAdapter<Destination> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return Destination(
-      id: fields[0] as String,
+      id: fields[0] as int,
       name: fields[1] as String,
       belongings: (fields[2] as List).cast<Belonging>(),
     );
