@@ -63,8 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             )
           else
-            Padding(
-              padding: const EdgeInsets.only(top: 32),
+            Expanded(
               child: Image.asset(
                 "${Path.image}img_empty.png",
                 width: 244,
