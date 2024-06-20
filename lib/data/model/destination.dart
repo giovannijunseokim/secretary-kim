@@ -6,14 +6,11 @@ part 'destination.g.dart';
 @HiveType(typeId: 0)
 class Destination {
   @HiveField(0)
-  int id;
-  @HiveField(1)
   String name;
-  @HiveField(2)
+  @HiveField(1)
   List<Belonging> belongings;
 
   Destination({
-    required this.id,
     required this.name,
     required this.belongings,
   });

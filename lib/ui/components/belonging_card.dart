@@ -6,7 +6,7 @@ class BelongingCard extends StatelessWidget {
   final String name;
   final bool isClicked;
 
-  const BelongingCard({super.key, required this.name, required this.isClicked});
+  const BelongingCard({super.key, required this.name, this.isClicked = false});
 
   @override
   Widget build(BuildContext context) {
