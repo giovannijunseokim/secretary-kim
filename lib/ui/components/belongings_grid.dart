@@ -3,7 +3,9 @@ import 'package:secretary_kim/ui/components/belonging_card.dart';
 import 'package:secretary_kim/ui/components/buttons.dart';
 
 class BelongingsGrid extends StatelessWidget {
-  const BelongingsGrid({super.key});
+  final Iterable<String> belongings;
+
+  const BelongingsGrid({super.key, required this.belongings});
 
   @override
   Widget build(BuildContext context) {
@@ -14,12 +16,9 @@ class BelongingsGrid extends StatelessWidget {
         crossAxisSpacing: 24,
         childAspectRatio: 140 / 81,
         padding: const EdgeInsets.symmetric(horizontal: 28),
-        children: const [
-          BelongingCard(name: "휴대폰", isClicked: true),
-          BelongingCard(name: "지갑", isClicked: false),
-          BelongingCard(name: "휴대폰", isClicked: false),
-          BelongingCard(name: "지갑", isClicked: false),
-          BelongingAddButton()
+        children: [
+          for (String belonging in belongings) BelongingCard(name: belonging),
+          const BelongingAddButton()
         ],
       ),
     );
