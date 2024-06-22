@@ -32,11 +32,11 @@ class _BelongingsScreenState extends State<BelongingsScreen> {
       backgroundColor: SkColors.black,
       body: Column(
         children: [
-          SizedBox(height: 24),
-          TopBar(doesBackIconVisible: true),
-          SizedBox(height: 14),
-          TitleText(title: "준비된 소지품을 클릭해주세요"),
-          SizedBox(height: 34),
+          const SizedBox(height: 24),
+          const TopBar(doesBackIconVisible: true),
+          const SizedBox(height: 14),
+          const TitleText(title: "준비된 소지품을 클릭해주세요"),
+          const SizedBox(height: 34),
           BelongingsGrid(
             belongings: belongings.map(
               (belonging) {
@@ -44,7 +44,7 @@ class _BelongingsScreenState extends State<BelongingsScreen> {
               },
             ),
           ),
-          MoveButton(isEnabled: false)
+          const MoveButton(isEnabled: false)
         ],
       ),
     );
