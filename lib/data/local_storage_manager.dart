@@ -23,6 +23,10 @@ class LocalStorageManager {
     return Hive.box<Destination>('user_destinations');
   }
 
+  Destination? getDestination(int index) {
+    return Hive.box<Destination>('user_destinations').getAt(index);
+  }
+
   void putDestination(int index, Destination destination) {
     Hive.box<Destination>('user_destinations').put(index, destination);
   }
